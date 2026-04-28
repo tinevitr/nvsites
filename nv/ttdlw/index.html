@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="RabbaniRusyaidi/Tine" />
+  <title>TikTok Downloader</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="https://cld.rnfje.eu.cc/hBTj" />
+  <link rel="icon" type="image/png" href="https://cld.rnfje.eu.cc/hBTj" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>.logo,header{align-items:center;display:flex}.logo,.logo-icon,header{display:flex}.hero h1,.logo{font-family:'Bebas Neue',sans-serif}.btn-fetch,.header-badge,.hero-tag,.section-label{text-transform:uppercase}.music-info,.music-title,.result-card,.thumb-wrap,.video-title{overflow:hidden}.dl-btn,footer{text-align:center}:root{--black:#0a0a0a;--white:#fafafa;--yellow:#FFE000;--pink:#FF3CAC;--blue:#00C2FF;--green:#00FF94;--border:3px solid var(--black);--shadow:5px 5px 0px var(--black);--shadow-lg:8px 8px 0px var(--black);--radius:0px}.header-badge,.logo-icon{border:2px solid var(--yellow)}*{margin:0;padding:0;box-sizing:border-box}body{background:var(--yellow);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:.5}header{background:var(--black);border-bottom:var(--border);padding:16px 32px;justify-content:space-between;position:sticky;top:0;z-index:100}.logo{font-size:2rem;color:var(--yellow);letter-spacing:2px;gap:10px}.logo-icon{width:36px;height:36px;background:var(--pink);align-items:center;justify-content:center;transform:rotate(-5deg)}.header-badge{background:var(--yellow);color:var(--black);font-size:.7rem;font-weight:900;padding:4px 10px;letter-spacing:1px}.hero h1 span,.hero-tag{background:var(--black);display:inline-block}.hero-tag,footer{font-size:.75rem}main{max-width:760px;margin:0 auto;padding:48px 24px}.hero{margin-bottom:40px}.hero h1,.hero-tag{margin-bottom:16px}.hero-tag{color:var(--yellow);font-weight:700;letter-spacing:2px;padding:6px 14px}.input-card,.url-input{border:var(--border);background:var(--white)}.hero h1,.hero p,.url-input{color:var(--black)}.hero h1{font-size:clamp(3rem, 10vw, 5.5rem);line-height:.95;letter-spacing:1px}.hero h1 span{color:var(--white);padding:0 8px}.hero p{font-size:1rem;font-weight:500;opacity:.75;max-width:480px}.input-card{box-shadow:var(--shadow-lg);padding:28px;margin-bottom:32px;position:relative}.input-card::before{content:'PASTE URL';position:absolute;top:-12px;left:20px;background:var(--pink);color:var(--white);font-size:.65rem;font-weight:900;letter-spacing:2px;padding:3px 10px;border:2px solid var(--black)}.input-row{display:flex;gap:0}.url-input{flex:1;border-right:none;padding:14px 18px;font-family:'Space Mono',monospace;font-size:.85rem;outline:0;transition:background .15s}.btn-fetch,.error-box{align-items:center;font-family:'Space Mono',monospace;font-weight:700}.btn-fetch,.error-box,.result-card{border:var(--border)}.btn-fetch,.dl-btn{cursor:pointer;transition:transform .1s,box-shadow .1s}.url-input::placeholder{color:#aaa}.url-input:focus{background:#fff9e0}.btn-fetch{background:var(--black);color:var(--yellow);padding:14px 22px;font-size:.8rem;display:flex;gap:8px;letter-spacing:1px;white-space:nowrap;box-shadow:var(--shadow)}.btn-fetch:hover,.dl-btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--black)}.btn-fetch:active,.dl-btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--black)}.btn-fetch:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:var(--shadow)}.error-box{display:none;background:#f33;color:var(--white);box-shadow:var(--shadow);padding:14px 18px;margin-top:16px;font-size:.85rem;display:flex;gap:10px}.play-badge,.thumb-overlay{align-items:center;display:flex}.error-box.hidden{display:none!important}.result-card{background:var(--white);box-shadow:var(--shadow-lg);display:none;animation:.3s slideUp}.result-card.show{display:block}@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.video-preview{display:grid;grid-template-columns:140px 1fr;border-bottom:var(--border)}.thumb-wrap{position:relative;border-right:var(--border)}.author-avatar,.play-badge{border:2px solid var(--black)}.thumb-wrap img{width:100%;height:100%;object-fit:cover;display:block}.thumb-overlay{position:absolute;inset:0;background:rgba(0,0,0,.3);justify-content:center}.play-badge{width:40px;height:40px;background:var(--yellow);justify-content:center}.author-row,.stat{align-items:center}.download-section,.video-meta{padding:20px}.author-row{display:flex;gap:10px;margin-bottom:12px}.author-avatar{width:36px;height:36px;object-fit:cover}.author-info{flex:1}.author-name{font-size:.85rem;font-weight:900;color:var(--black);display:block}.author-handle{font-size:.72rem;color:#666;font-family:'Space Mono',monospace}.video-title{font-size:.82rem;font-weight:600;color:var(--black);line-height:1.4;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.stats-row{display:flex;gap:14px;flex-wrap:wrap}.stat{display:flex;gap:5px;font-size:.72rem;font-family:'Space Mono',monospace;color:#555;background:#f2f2f2;padding:4px 8px;border:1.5px solid var(--black)}.stat.highlight{background:var(--yellow);color:var(--black);font-weight:700}.section-label{font-size:.65rem;font-weight:900;letter-spacing:2px;color:#888;margin-bottom:14px;display:flex;align-items:center;gap:8px}.section-label::after{content:'';flex:1;height:2px;background:#e0e0e0}.dl-btn,.music-bar{align-items:center}.download-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}.dl-btn,.loader.show,.music-bar,.music-icon{display:flex}.dl-btn{justify-content:center;gap:8px;padding:14px 16px;border:var(--border);font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}.music-author,footer{font-family:'Space Mono',monospace}.dl-btn.primary{background:var(--pink);color:var(--white)}.dl-btn.secondary,.dl-btn.tertiary,footer strong{color:var(--black)}.dl-btn.secondary{background:var(--blue)}.dl-btn.tertiary{background:var(--green)}.dl-btn.audio{background:#a7f;color:var(--white)}.music-bar{background:var(--black);color:var(--white);padding:12px 20px;gap:12px;border-top:var(--border)}.music-icon{width:32px;height:32px;background:var(--yellow);align-items:center;justify-content:center;flex-shrink:0;animation:3s linear infinite paused spin}.music-bar.playing .music-icon{animation-play-state:running}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}.music-info{flex:1}.music-title{font-size:.8rem;font-weight:700;white-space:nowrap;text-overflow:ellipsis}.music-author{font-size:.7rem;color:#aaa}.loader{display:none;align-items:center;justify-content:center;gap:6px;padding:8px 0}.loader-dot{width:8px;height:8px;background:var(--black);animation:.6s infinite bounce}.loader-dot:nth-child(2){animation-delay:.1s}.loader-dot:nth-child(3){animation-delay:.2s}@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}footer{padding:32px 24px 48px;color:rgba(0,0,0,.45)}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--yellow)}::-webkit-scrollbar-thumb{background:var(--black)}@media (max-width:520px){.download-grid,.video-preview{grid-template-columns:1fr}.thumb-wrap{height:200px;border-right:none;border-bottom:var(--border)}header{padding:14px 18px}main{padding:32px 16px}}</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon">
+        <i data-lucide="download" style="width:18px;height:18px;color:#FFE000;stroke-width:3"></i>
+      </div>
+      tDown
+    </div>
+    <div class="header-badge">No Watermark</div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="hero-tag">✦ Free TikTok Downloader</div>
+      <h1>DOWNLOAD<br><span>TIKTOK</span><br>VIDEOS</h1>
+      <p>Paste any TikTok link. Download without watermark, with watermark, or audio only — instantly.</p>
+    </div>
+    <div class="input-card">
+      <div class="input-row">
+        <input class="url-input" id="urlInput" type="url" placeholder="https://vm.tiktok.com/..." autocomplete="off" spellcheck="false" />
+        <button class="btn-fetch" id="fetchBtn" onclick="fetchVideo()">
+          <i data-lucide="search" style="width:16px;height:16px;stroke-width:3"></i>
+          FETCH
+        </button>
+      </div>
+      <div class="loader" id="loader">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <span style="font-family:'Space Mono',monospace;font-size:0.75rem;margin-left:8px;font-weight:700;">FETCHING...</span>
+      </div>
+      <div class="error-box hidden" id="errorBox">
+        <i data-lucide="alert-triangle" style="width:16px;height:16px;flex-shrink:0"></i>
+        <span id="errorMsg">Something went wrong.</span>
+      </div>
+    </div>
+    <div class="result-card" id="resultCard">
+      <div class="video-preview">
+        <div class="thumb-wrap">
+          <img id="resCover" src="" alt="cover" />
+          <div class="thumb-overlay">
+            <div class="play-badge">
+              <i data-lucide="play" style="width:18px;height:18px;stroke-width:3;color:#0a0a0a"></i>
+            </div>
+          </div>
+        </div>
+        <div class="video-meta">
+          <div class="author-row">
+            <img class="author-avatar" id="resAvatar" src="" alt="avatar" />
+            <div class="author-info">
+              <span class="author-name" id="resNickname"></span>
+              <span class="author-handle" id="resHandle"></span>
+            </div>
+          </div>
+          <div class="video-title" id="resTitle"></div>
+          <div class="stats-row">
+            <div class="stat highlight" id="resLikes">
+              <i data-lucide="heart" style="width:12px;height:12px;stroke-width:3"></i>
+              <span></span>
+            </div>
+            <div class="stat" id="resViews">
+              <i data-lucide="eye" style="width:12px;height:12px;stroke-width:2"></i>
+              <span></span>
+            </div>
+            <div class="stat" id="resComments">
+              <i data-lucide="message-circle" style="width:12px;height:12px;stroke-width:2"></i>
+              <span></span>
+            </div>
+            <div class="stat" id="resDuration">
+              <i data-lucide="clock" style="width:12px;height:12px;stroke-width:2"></i>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="download-section">
+        <div class="section-label">
+          <i data-lucide="download-cloud" style="width:13px;height:13px"></i>
+          Download Options
+        </div>
+        <div class="download-grid">
+          <a class="dl-btn primary" id="dlNoWM" href="#" target="_blank" download>
+            <i data-lucide="video" style="width:16px;height:16px;stroke-width:2.5"></i>
+            No Watermark
+          </a>
+          <a class="dl-btn secondary" id="dlWM" href="#" target="_blank" download>
+            <i data-lucide="badge-check" style="width:16px;height:16px;stroke-width:2.5"></i>
+            With Watermark
+          </a>
+          <a class="dl-btn audio" id="dlAudio" href="#" target="_blank" download>
+            <i data-lucide="music" style="width:16px;height:16px;stroke-width:2.5"></i>
+            Audio Only (MP3)
+          </a>
+          <button class="dl-btn tertiary" onclick="copyLink()">
+            <i data-lucide="copy" style="width:16px;height:16px;stroke-width:2.5"></i>
+            Copy Link
+          </button>
+        </div>
+      </div>
+      <div class="music-bar" id="musicBar">
+        <div class="music-icon">
+          <i data-lucide="disc-3" style="width:16px;height:16px;color:#0a0a0a;stroke-width:2"></i>
+        </div>
+        <div class="music-info">
+          <div class="music-title" id="resMusicTitle"></div>
+          <div class="music-author" id="resMusicAuthor"></div>
+        </div>
+        <i data-lucide="music-2" style="width:16px;height:16px;color:#666;stroke-width:2"></i>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; <span id="currentYear"></span> <strong>tDown</strong> — We does not host any content.
+  </footer> 
+  <script>lucide.createIcons(),document.getElementById("currentYear").textContent=new Date().getFullYear();const API_BASE=`${window.location.origin}/action/`;function fmt(e){return e?e>=1e6?(e/1e6).toFixed(1)+"M":e>=1e3?(e/1e3).toFixed(1)+"K":e.toString():"0"}function showError(e){let t=document.getElementById("errorBox");document.getElementById("errorMsg").textContent=e,t.classList.remove("hidden")}function hideError(){document.getElementById("errorBox").classList.add("hidden")}async function fetchVideo(){let e=document.getElementById("urlInput").value.trim();if(!e)return showError("Please paste a TikTok URL first!");if(!e.includes("tiktok.com"))return showError("That doesn't look like a TikTok URL.");hideError(),document.getElementById("resultCard").classList.remove("show"),document.getElementById("fetchBtn").disabled=!0,document.getElementById("loader").classList.add("show");try{let t=await fetch(API_BASE+encodeURIComponent(e)),n=await t.json();if(0!==n.code||!n.data)throw Error(n.msg||"Failed to fetch video.");renderResult(n.data)}catch(r){showError(r.message||"Network error. Please try again.")}finally{document.getElementById("fetchBtn").disabled=!1,document.getElementById("loader").classList.remove("show")}}function renderResult(e){document.getElementById("resCover").src=e.cover||e.origin_cover||"",document.getElementById("resAvatar").src=e.author?.avatar||"",document.getElementById("resNickname").textContent=e.author?.nickname||"Unknown",document.getElementById("resHandle").textContent="@"+(e.author?.unique_id||"");let t=Array.isArray(e.content_desc)?e.content_desc[0]:e.title||"";document.getElementById("resTitle").textContent=t||e.title||"No title",document.getElementById("resLikes").querySelector("span").textContent=fmt(e.digg_count),document.getElementById("resViews").querySelector("span").textContent=fmt(e.play_count),document.getElementById("resComments").querySelector("span").textContent=fmt(e.comment_count),document.getElementById("resDuration").querySelector("span").textContent=(e.duration||0)+"s",document.getElementById("dlNoWM").href=e.play||"#",document.getElementById("dlWM").href=e.wmplay||e.play||"#",document.getElementById("dlAudio").href=e.music||e.music_info?.play||"#",document.getElementById("resMusicTitle").textContent=e.music_info?.title||"Original Sound",document.getElementById("resMusicAuthor").textContent=e.music_info?.author||"",document.getElementById("resultCard").classList.add("show"),lucide.createIcons(),document.getElementById("resultCard").scrollIntoView({behavior:"smooth",block:"start"})}function copyLink(){let e=document.getElementById("dlNoWM").href;e&&"#"!==e&&navigator.clipboard.writeText(e).then(()=>{let e=document.querySelector(".dl-btn.tertiary"),t=e.innerHTML;e.innerHTML='<i data-lucide="check" style="width:16px;height:16px;stroke-width:3"></i> Copied!',lucide.createIcons(),setTimeout(()=>{e.innerHTML=t,lucide.createIcons()},1800)})}document.getElementById("urlInput").addEventListener("keydown",function(e){"Enter"===e.key&&fetchVideo()});</script>
+</body>
+</html>
